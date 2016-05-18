@@ -1,0 +1,28 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background-color: #003164;
+}
+div.prompt {
+	background-color: steelblue;
+	height: 10em;
+	width: 20em;
+	margin: 0 auto;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 0em;
+}
+
+div.numbers {
+   margin: 0 auto;
+   height: 20em;
+   width: 20em;
+   color: #fff;
+   overflow: scroll;
+   border: .1em solid steelblue;
+
+}
