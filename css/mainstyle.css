@@ -13,8 +13,9 @@ div.prompt {
 	margin-top: 5em;
 	margin-bottom: 2em;
 	text-align: center;
-	padding-top: 4em;
+	padding-top: 3em;
 	padding-bottom: 0em;
+	border: .1em solid #6F648B;
 }
 
 div.numbers {
