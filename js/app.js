@@ -1,15 +1,16 @@
 $(document).ready(function(){
    function userCount() {
       input = $('#count').val();
-      if (isNaN(input)) {
-         $('h3#head').html('Please enter a number');
-         return
-      }
+      if (input % 1 == 0) {
+      // if (isNaN(input)) {
+      //    $('h3#head').html('Please enter a number');
+      //    return
+      // };
 
-      else if (input < 1 || input > 100) {
-         $('h3#head').html('Please enter a number between 1 and 100');
-         return
-      };
+      // if (input < 1 || input > 100) {
+      //    $('h3#head').html('Please enter a number between 1 and 100');
+      //    return
+      // };
       $('input#count').val('').focus();
 
       for (var i = 1; i <= input; i++) {
@@ -29,6 +30,7 @@ $(document).ready(function(){
          $('.numbers').append("<p>").append(i).append(", ").append("</p>")
    }
 };
+};
 
    };
 
@@ -37,5 +39,8 @@ $(document).ready(function(){
 $('#countButton').click(function() {
       userCount();
    });
+$('#refresh').click(function() {
+   location.reload();
+});
 
 });
